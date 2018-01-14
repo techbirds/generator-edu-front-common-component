@@ -1,4 +1,4 @@
-# generator-edu-front-common-component 
+# generator-edu-front-common-component [![Build Status][travis-image]][travis-url]
 
 ## Installation
 
