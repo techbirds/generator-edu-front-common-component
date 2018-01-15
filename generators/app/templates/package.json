@@ -12,7 +12,9 @@
         "component": "nei build -k 5c9a52413e0c5d3d8f6b7a98d7c1d251 -module <%= module_name %>",
         "coverage-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage lcov",
         "coverage-cmd-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage text-summary",
-        "test": "gulp coverage && mocha-phantomjs test/coverage.html --hooks test/hook.js"
+        "test": "gulp coverage && mocha-phantomjs test/coverage.html --hooks test/hook.js",
+        "dev": "gulp serve",
+        "start": "npm run dev"
     },
     "repository": {
         "type": "git",
@@ -26,10 +28,13 @@
     "author": "<%= project_author %> <<%= project_author %>@corp.netease.com>",
     "license": "MIT",
     "devDependencies": {
+        "browser-sync": "^2.23.5",
         "gulp": "^3.9.1",
-        "replacestream": "^4.0.2",
-        "ink-docstrap": "^1.2.1",
         "gulp-istanbul": "^1.1.1",
-        "istanbul": "^0.4.5"
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.3",
+        "ink-docstrap": "^1.2.1",
+        "istanbul": "^0.4.5",
+        "replacestream": "^4.0.2"
     }
 }
